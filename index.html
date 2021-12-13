@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta content="default-src 'self'; script-src 'self'" http-equiv="Content-Security-Policy">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Hello World!</title>
+</head>
+<body>
+<h1>sys Info</h1>
+<div class="container">
+    <div>
+        <p> We are using Node.js <span id="node-version"></span></p>
+        <p>Chromium <span id="chrome-version"></span></p>
+        <p> Electron <span id="electron-version"></span></p>
+    </div>
+
+    <div>
+        <p> Operating system <span id="op-version"></span></p>
+        <p> CpuUsage <span id="cpu-usage"></span></p>
+        <p> Platform <span id="platform"></span></p>
+    </div>
+    <div>
+       <p>System memory <span id="sys-memory"></span> </p>
+       <p>Free memory <span id="free-memory"></span> </p>
+       <p>Swap memory <span id="swap-memory"></span> </p>
+        <p>upTime <span id="upTime"></span></p>
+    </div>
+    <div>
+        <p>Computer name <span id="user-name"></span></p>
+    </div>
+    <a type="button" href="index.html">Reload stats</a>
+</div>
+
+
+
+<!-- You can also require other files to run in this process -->
+<script src="./renderer.js"></script>
+</body>
+</html>

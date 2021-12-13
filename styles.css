@@ -1,0 +1,24 @@
+/* styles.css */
+
+/* Add styles here to customize the appearance of your app */
+.container{
+    max-width: 720px;
+    width: 450px;
+    margin: 4rem auto;
+}
+p{
+    font-weight: lighter;
+}
+span {
+    font-weight: bold;
+}
+a {
+    padding: .2rem 1rem;
+    background: aqua;
+    color: darkblue;
+    text-decoration: none;
+    display: block;
+}
+.color{
+    background: red;
+}
